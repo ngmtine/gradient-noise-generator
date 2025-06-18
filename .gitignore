@@ -1,0 +1,10 @@
+# 開発用
+node_modules/
+.next
+
+# 環境変数
+.env.*
+!.env.example
+
+# その他
+prompt.txt

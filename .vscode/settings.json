@@ -1,0 +1,17 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports.biome": "explicit"
+    },
+    "editor.unicodeHighlight.allowedCharacters": {
+        "　": true
+    },
+    "files.exclude": {
+        ".next": true,
+        "node_modules": true
+    },
+    "typescript.tsdk": "node_modules/typescript/lib"
+    // "biome.lsp.bin": "next/node_modules/@biomejs/biome/bin/biome"
+    // "biome.configurationPath": "next/biome.json" // なぜか効かないので仕方なしbiome.jsonはリポジトリルートに設置
+}

@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* ダークモード設定 詳細下部 */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@plugin "daisyui" {
+    themes: nord, dark;
+}
+
+/*
+
+tailwind v4からは、css側で設定を行う
+tailwind.config.tsは不要になった
+
+@custom-variant について
+Tailwind v4のディレクティブであり、独自のCSSバリアント（修飾子）を定義する
+ここでは dark という名前のバリアントを作成しており、これにより dark:bg-black のようなクラスが利用可能になる
+
+適用されるテーマの切り替え自体はThemeToggleButtonで行う
+ThemeToggleButton押下でnext-themesのsetThemeを実行、
+それによりhtmlタグのdata-theme属性が更新され、
+属性の更新によってdaisyuiのスタイルが適用される、
+という流れ
+
+適用するテーマ自体は、（このファイル内に記述がある通り）daisyui側の設定で事前に指定する必要がある
+themes: nord, dark; のように個別で指定するか、
+themes: all; のように一括で指定するかの2択
+
+モードの指定方法に（デフォルトのclassではなく）data-theme属性を使用するための設定は、
+以下の様にNextThemeProvider側のpropsで指定する
+attribute="data-theme"
+
+*/

@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "name": "gradient-noise-generator",
+            "path": ".."
+        }
+    ]
+    //     "settings": {
+    //         "workbench.colorTheme": "Iceberg",
+    //         "workbench.colorCustomizations": {
+    //             "activityBar.background": "#344a50",
+    //             "activityBarBadge.background": "#344a50",
+    //             "activityBarBadge.foreground": "#c6c8d1"
+    //         }
+    //     },
+}
